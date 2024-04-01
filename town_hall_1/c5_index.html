@@ -1,110 +1,45 @@
-/* custom property */
-:root {
-	--global-color-1: #800000;
-	--global-color-2: #931420;
-	--global-color-3: #fffded;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* The reset selector */
-* {
-	margin: 0;
-	padding: 0;
-}
-/* the styles for the elements */
-body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-	width:	600px;
-	margin-top: 0;
-	margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-	border-style: solid;
-	border-width: 3px;
-	border-color: var(--global-color-2);
-	background: var(--global-color-3);
-}
-a:focus, a:hover {
-	font-style: italic;
-}
-html {
-	background: white;
-}
-/* the styles for the header */
-header {
-	border-bottom-style: solid;
-	border-bottom-width: 3px;
-	border-bottom-color: var(--global-color-2);
-	padding-top: 1.5em;
-	padding-bottom: 2em;
-	background-image:
-		linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100% );
-}
-header h2 {
-	font-size: 175%;
-	color: var(--global-color-1);
-}
-header h3 {
-	font-size: 130%;
-	font-style: italic;
-}
-header img {
-	float: left;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-.shadow {
-	text-shadow: 2px 2px 2px var(--global-color-1);
-}
-/* the styles for the main content */
-main {
-	clear: left;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-main h1 {
-	font-size: 150%;
-	padding: .3em 0;
-	border-top-style: solid;
-	border-top-width: 3px;
-	border-top-color: var(--global-color-2);
-	border-bottom-style: solid;
-	border-bottom-width: 3px;
-	border-bottom-color: var(--global-color-2);
+<head>
+	<meta charset="utf-8">
+	<title>San Joaquin Valley Town Hall</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/c5_main.css">
+</head>
 
-}
-main h2 {
-	color: var(--global-color-1);
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
-}
-main h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-main img {
-	padding-bottom: 1em;
-}
-main p {
-	padding-bottom: .5em;
-}
-main blockquote {
-	padding: 0 2em;
-	font-style: italic;
-}
-main ul {
-	padding: 0 0 .25em 1.25em;
-}
-main li {
-	padding-bottom: .35em;
-}
+<body>
+	<header>
+		<img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+		<h2>San Joaquin Valley Town Hall</h2>
+		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+	</header>
+	<main>
+		<h2>Our Mission</h2>
+		<p>San Joaquin Valley Town Hall is a non-profit organization that is run by an 
+			all-volunteer board of directors. Our mission is to bring nationally and 
+			internationally renowned, thought-provoking speakers who inform, educate, 
+			and entertain our audience! As one or our members told us:</p>
+		<blockquote>&ldquo;Each year I give a ticket package to each of our family members. 
+			I think of it as the gift of knowledge...and that is priceless.&rdquo;</blockquote>
 
-/* the styles for the footer */
-footer{
-	background: var(--global-color-2);
-}
-footer p {
-	text-align: center;
-	padding: 1em 0;
-	color: white;
-}
+		<h2>Our Ticket Packages</h2>
+		<ul>
+			<li>Season Package: $95</li>
+			<li>Patron Package: $200</li>
+			<li>Single Speaker: $25</li>
+		</ul>
+
+		<h1>This season's guest speakers</h1>
+		<h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
+		<img src="images/brancaccio75.jpg" alt="David Brancaccio photo">
+		<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+		<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+		<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
+		<img src="images/chua75.jpg" alt="Amy Chua photo">
+	</main>
+	<footer>
+		<p>&copy; 2022, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	</footer>
+</body>
+</html>
